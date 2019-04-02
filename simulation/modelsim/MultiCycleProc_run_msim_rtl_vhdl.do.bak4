@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/clockInverter.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/MultiCycleProc.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/OneBitAdder.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/ONE_BIT_SELECT.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/enardFF_2.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_TWO_TO_ONE.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/PC_Adder.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_REG.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/instruction_mem.vhd}
+vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/IF_ID_Reg.vhd}
+
