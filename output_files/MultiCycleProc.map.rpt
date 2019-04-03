@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MultiCycleProc
-Mon Apr 01 23:16:19 2019
+Wed Apr 03 11:05:06 2019
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -13,68 +13,12 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Source assignments for instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated
- 12. Parameter Settings for User Entity Instance: instruction_mem:MEM_ROM|altsyncram:altsyncram_component
- 13. altsyncram Parameter Settings by Entity Instance
- 14. Port Connectivity Checks: "equalTest:EQTEST"
- 15. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit0"
- 16. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit1"
- 17. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit2"
- 18. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit3"
- 19. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit4"
- 20. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit5"
- 21. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit6"
- 22. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit7"
- 23. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit0"
- 24. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit1"
- 25. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit2"
- 26. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit3"
- 27. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit4"
- 28. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit5"
- 29. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit6"
- 30. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit7"
- 31. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit8"
- 32. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit9"
- 33. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit10"
- 34. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit11"
- 35. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit12"
- 36. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit13"
- 37. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit14"
- 38. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit15"
- 39. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit16"
- 40. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit17"
- 41. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit18"
- 42. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit19"
- 43. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit20"
- 44. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit21"
- 45. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit22"
- 46. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit23"
- 47. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit24"
- 48. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit25"
- 49. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit26"
- 50. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit27"
- 51. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit28"
- 52. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit29"
- 53. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit30"
- 54. Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit31"
- 55. Port Connectivity Checks: "IF_ID_Reg:IF_ID"
- 56. Port Connectivity Checks: "PC_Adder:PC_INC|oneBitAdder:\AddGenerator:7:SingleBitAdd"
- 57. Port Connectivity Checks: "PC_Adder:PC_INC"
- 58. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit0"
- 59. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit1"
- 60. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit2"
- 61. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit3"
- 62. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit4"
- 63. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit5"
- 64. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit6"
- 65. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit7"
- 66. Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG"
- 67. Post-Synthesis Netlist Statistics for Top Partition
- 68. Elapsed Time Per Partition
- 69. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "equalTestFiveBit:Compare_MemWb_Rd_Zero"
+ 10. Port Connectivity Checks: "equalTestFiveBit:Compare_EXMEM_Rd_Zero"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -101,16 +45,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 01 23:16:19 2019      ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 03 11:05:06 2019      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; MultiCycleProc                             ;
-; Top-level Entity Name              ; MultiCycleProc                             ;
+; Top-level Entity Name              ; Forwarding_Unit                            ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
+; Total logic elements               ; 22                                         ;
+;     Total combinational functions  ; 22                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 52                                         ;
+; Total pins                         ; 26                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -124,7 +68,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; MultiCycleProc     ; MultiCycleProc     ;
+; Top-level entity name                                                      ; Forwarding_Unit    ; MultiCycleProc     ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -222,106 +166,59 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
-; MultiCycleProc.vhd               ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/MultiCycleProc.vhd           ;         ;
-; EIGHT_BIT_SIXTEEN_TO_ONE.vhd     ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_SIXTEEN_TO_ONE.vhd ;         ;
-; EIGHT_BIT_FOUR_TO_ONE.vhd        ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_FOUR_TO_ONE.vhd    ;         ;
-; EIGHT_BIT_TWO_TO_ONE.vhd         ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_TWO_TO_ONE.vhd     ;         ;
-; ONE_BIT_1_TO_32.vhd              ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/ONE_BIT_1_TO_32.vhd          ;         ;
-; EIGHT_BIT_32_TO_1.vhd            ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_32_TO_1.vhd        ;         ;
-; clockInverter.vhd                ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/clockInverter.vhd            ;         ;
-; REG_FILE.vhd                     ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/REG_FILE.vhd                 ;         ;
-; OneBitAdder.vhd                  ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/OneBitAdder.vhd              ;         ;
-; ONE_BIT_SELECT.vhd               ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/ONE_BIT_SELECT.vhd           ;         ;
-; enardFF_2.vhd                    ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/enardFF_2.vhd                ;         ;
-; PC_Adder.vhd                     ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/PC_Adder.vhd                 ;         ;
-; EIGHT_BIT_REG.vhd                ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/EIGHT_BIT_REG.vhd            ;         ;
-; instruction_mem.hex              ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/instruction_mem.hex          ;         ;
-; instruction_mem.vhd              ; yes             ; User Wizard-Generated File            ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/instruction_mem.vhd          ;         ;
-; IF_ID_Reg.vhd                    ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/IF_ID_Reg.vhd                ;         ;
-; equalTest.vhd                    ; yes             ; User VHDL File                        ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd                ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/altsyncram.tdf                ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/stratix_ram_block.inc         ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.inc                   ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_decode.inc                ;         ;
-; aglobal141.inc                   ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/aglobal141.inc                ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/a_rdenreg.inc                 ;         ;
-; altrom.inc                       ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/altrom.inc                    ;         ;
-; altram.inc                       ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/altram.inc                    ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                          ; c:/altera/14.1/quartus/libraries/megafunctions/altdpram.inc                  ;         ;
-; db/altsyncram_uts3.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/db/altsyncram_uts3.tdf       ;         ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; Forwarding_Unit.vhd              ; yes             ; User VHDL File  ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd  ;         ;
+; equalTestFiveBit.vhd             ; yes             ; User VHDL File  ; C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-;                                             ;                ;
-; Total combinational functions               ; 0              ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 0              ;
-;     -- 3 input functions                    ; 0              ;
-;     -- <=2 input functions                  ; 0              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 0              ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 52             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; ValueSelect[0] ;
-; Maximum fan-out                             ; 1              ;
-; Total fan-out                               ; 52             ;
-; Average fan-out                             ; 0.50           ;
-+---------------------------------------------+----------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimated Total logic elements              ; 22                 ;
+;                                             ;                    ;
+; Total combinational functions               ; 22                 ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 16                 ;
+;     -- 3 input functions                    ; 1                  ;
+;     -- <=2 input functions                  ; 5                  ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 22                 ;
+;     -- arithmetic mode                      ; 0                  ;
+;                                             ;                    ;
+; Total registers                             ; 0                  ;
+;     -- Dedicated logic registers            ; 0                  ;
+;     -- I/O registers                        ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 26                 ;
+;                                             ;                    ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; MEM_WB_Rd[1]~input ;
+; Maximum fan-out                             ; 3                  ;
+; Total fan-out                               ; 107                ;
+; Average fan-out                             ; 1.45               ;
++---------------------------------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |MultiCycleProc            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |MultiCycleProc     ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; |Forwarding_Unit                             ; 22 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |Forwarding_Unit                                         ; work         ;
+;    |equalTestFiveBit:Compare_EXMEM_Rd_Zero|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Forwarding_Unit|equalTestFiveBit:Compare_EXMEM_Rd_Zero  ; work         ;
+;    |equalTestFiveBit:Compare_ExMemRd_IdExRs| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Forwarding_Unit|equalTestFiveBit:Compare_ExMemRd_IdExRs ; work         ;
+;    |equalTestFiveBit:Compare_ExMemRd_IdExRt| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Forwarding_Unit|equalTestFiveBit:Compare_ExMemRd_IdExRt ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                         ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------+---------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                         ; IP Include File     ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------+---------------------+
-; Altera ; ROM: 1-PORT  ; 14.1    ; N/A          ; N/A          ; |MultiCycleProc|instruction_mem:MEM_ROM ; instruction_mem.vhd ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------+---------------------+
-
-
-+----------------------------------------------------------------+
-; Registers Removed During Synthesis                             ;
-+-------------------------------------------+--------------------+
-; Register name                             ; Reason for Removal ;
-+-------------------------------------------+--------------------+
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit0|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit1|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit2|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit3|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit4|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit5|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit6|int_q ; Lost fanout        ;
-; EIGHT_BIT_REG:PC_REG|enARdFF_2:bit7|int_q ; Lost fanout        ;
-; Total Number of Removed Registers = 8     ;                    ;
-+-------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -339,576 +236,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Source assignments for instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                              ;
-+---------------------------------+--------------------+------+-------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                               ;
-+---------------------------------+--------------------+------+-------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: instruction_mem:MEM_ROM|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                     ;
-+------------------------------------+----------------------+------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                  ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                               ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                             ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                             ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                           ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                  ;
-; OPERATION_MODE                     ; ROM                  ; Untyped                                  ;
-; WIDTH_A                            ; 32                   ; Signed Integer                           ;
-; WIDTHAD_A                          ; 8                    ; Signed Integer                           ;
-; NUMWORDS_A                         ; 256                  ; Signed Integer                           ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                  ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                  ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                  ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                  ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                  ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                  ;
-; WIDTH_B                            ; 1                    ; Signed Integer                           ;
-; WIDTHAD_B                          ; 1                    ; Signed Integer                           ;
-; NUMWORDS_B                         ; 0                    ; Signed Integer                           ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                  ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                  ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                  ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                  ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                  ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                  ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                  ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                  ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                  ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                  ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                           ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                           ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                  ;
-; BYTE_SIZE                          ; 8                    ; Signed Integer                           ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                  ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
-; INIT_FILE                          ; instruction_mem.hex  ; Untyped                                  ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                  ;
-; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                           ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                  ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                  ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                  ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                  ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                  ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                  ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                  ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                  ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                           ;
-; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                  ;
-; CBXI_PARAMETER                     ; altsyncram_uts3      ; Untyped                                  ;
-+------------------------------------+----------------------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                    ;
-+-------------------------------------------+---------------------------------------------------------+
-; Name                                      ; Value                                                   ;
-+-------------------------------------------+---------------------------------------------------------+
-; Number of entity instances                ; 1                                                       ;
-; Entity Instance                           ; instruction_mem:MEM_ROM|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                                     ;
-;     -- WIDTH_A                            ; 32                                                      ;
-;     -- NUMWORDS_A                         ; 256                                                     ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                            ;
-;     -- WIDTH_B                            ; 1                                                       ;
-;     -- NUMWORDS_B                         ; 0                                                       ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                  ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                            ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                    ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ;
-+-------------------------------------------+---------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "equalTest:EQTEST"                                                                    ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; brsig ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit0"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit1"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit2"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit3"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit4"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit5"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit6"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:pcbit7"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit0"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit1"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit2"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit3"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit4"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit5"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit6"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit7"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit8"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit9"                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit10"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit11"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit12"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit13"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit14"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit15"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit16"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit17"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit18"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit19"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit20"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit21"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit22"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit23"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit24"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit25"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit26"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit27"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit28"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit29"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit30"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID|enARdFF_2:ibit31"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IF_ID_Reg:IF_ID"                                                                                      ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; insruction_out[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; insruction_out[15..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pcinc_out              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PC_Adder:PC_INC|oneBitAdder:\AddGenerator:7:SingleBitAdd"                                 ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; o_carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------+
-; Port Connectivity Checks: "PC_Adder:PC_INC" ;
-+---------+-------+----------+----------------+
-; Port    ; Type  ; Severity ; Details        ;
-+---------+-------+----------+----------------+
-; carryin ; Input ; Info     ; Stuck at GND   ;
-; b[7..3] ; Input ; Info     ; Stuck at GND   ;
-; b[1..0] ; Input ; Info     ; Stuck at GND   ;
-; b[2]    ; Input ; Info     ; Stuck at VCC   ;
-+---------+-------+----------+----------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit0"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit1"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit2"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit3"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit4"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit5"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit6"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit7"                                                  ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------+
-; Port Connectivity Checks: "EIGHT_BIT_REG:PC_REG" ;
-+------+-------+----------+------------------------+
-; Port ; Type  ; Severity ; Details                ;
-+------+-------+----------+------------------------+
-; load ; Input ; Info     ; Stuck at VCC           ;
-+------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "equalTestFiveBit:Compare_MemWb_Rd_Zero" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; numb ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "equalTestFiveBit:Compare_EXMEM_Rd_Zero" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; numb ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -916,13 +259,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 52                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; boundary_port         ; 26                          ;
+; cycloneiii_lcell_comb ; 22                          ;
+;     normal            ; 22                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 4.02                        ;
 +-----------------------+-----------------------------+
 
 
@@ -941,12 +286,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Mon Apr 01 23:16:07 2019
+    Info: Processing started: Wed Apr 03 11:04:55 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelinedMips -c MultiCycleProc
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file multicycleproc.vhd
     Info (12022): Found design unit 1: MultiCycleProc-RTL
     Info (12023): Found entity 1: MultiCycleProc
+Info (12021): Found 2 design units, including 1 entities, in source file onebitcomparator.vhd
+    Info (12022): Found design unit 1: oneBitComparator-rtl
+    Info (12023): Found entity 1: oneBitComparator
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitcomparator.vhd
+    Info (12022): Found design unit 1: EightBitComparator-rtl
+    Info (12023): Found entity 1: EightBitComparator
+Info (12021): Found 2 design units, including 1 entities, in source file hazard_control_unit.vhd
+    Info (12022): Found design unit 1: Hazard_Control-structual
+    Info (12023): Found entity 1: Hazard_Control
+Info (12021): Found 2 design units, including 1 entities, in source file forwarding_unit.vhd
+    Info (12022): Found design unit 1: Forwarding_Unit-structual
+    Info (12023): Found entity 1: Forwarding_Unit
+Info (12021): Found 2 design units, including 1 entities, in source file ex_mem_buffer.vhd
+    Info (12022): Found design unit 1: Ex_Mem_Buffer-Structual
+    Info (12023): Found entity 1: Ex_Mem_Buffer
+Info (12021): Found 2 design units, including 1 entities, in source file control_unit.vhd
+    Info (12022): Found design unit 1: CONTROL_UNIT-stru
+    Info (12023): Found entity 1: CONTROL_UNIT
+Info (12021): Found 2 design units, including 1 entities, in source file four_multiplier.vhd
+    Info (12022): Found design unit 1: FOUR_MULTIPLIER-stru
+    Info (12023): Found entity 1: FOUR_MULTIPLIER
 Info (12021): Found 2 design units, including 1 entities, in source file eight_bit_sixteen_to_one.vhd
     Info (12022): Found design unit 1: EIGHT_BIT_SIXTEEN_TO_ONE-stru
     Info (12023): Found entity 1: EIGHT_BIT_SIXTEEN_TO_ONE
@@ -992,193 +358,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file if_id_r
 Info (12021): Found 2 design units, including 1 entities, in source file equaltest.vhd
     Info (12022): Found design unit 1: equalTest-RTL
     Info (12023): Found entity 1: equalTest
-Info (12127): Elaborating entity "MultiCycleProc" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(26): used implicit default value for signal "MuxOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(27): used implicit default value for signal "InstructionOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(28): used implicit default value for signal "BranchOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(28): used implicit default value for signal "ZeroOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(28): used implicit default value for signal "MemWriteOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(28): used implicit default value for signal "RegWriteOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(37): used implicit default value for signal "PC_BRANCH_ADR_EX_MEM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at MultiCycleProc.vhd(38): object "IF_ID_PC" assigned a value but never read
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(37): used implicit default value for signal "MEM_WB_WRITE_DATA_IN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(41): used implicit default value for signal "MEM_WB_WRITE_REG_IN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(43): used implicit default value for signal "PCSrc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(43): used implicit default value for signal "IFFlush" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(43): used implicit default value for signal "IFStall" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at MultiCycleProc.vhd(43): used implicit default value for signal "MEM_WB_REG_WRITE_SIG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at MultiCycleProc.vhd(44): object "BR_EQUAL_SIG" assigned a value but never read
-Info (12128): Elaborating entity "EIGHT_BIT_REG" for hierarchy "EIGHT_BIT_REG:PC_REG"
-Warning (10036): Verilog HDL or VHDL warning at EIGHT_BIT_REG.vhd(30): object "d_qBar" assigned a value but never read
-Info (12128): Elaborating entity "enARdFF_2" for hierarchy "EIGHT_BIT_REG:PC_REG|enARdFF_2:bit7"
-Info (12128): Elaborating entity "PC_Adder" for hierarchy "PC_Adder:PC_INC"
-Info (12128): Elaborating entity "oneBitAdder" for hierarchy "PC_Adder:PC_INC|oneBitAdder:SingleBitAdd"
-Info (12128): Elaborating entity "instruction_mem" for hierarchy "instruction_mem:MEM_ROM"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "instruction_mem:MEM_ROM|altsyncram:altsyncram_component"
-Info (12130): Elaborated megafunction instantiation "instruction_mem:MEM_ROM|altsyncram:altsyncram_component"
-Info (12133): Instantiated megafunction "instruction_mem:MEM_ROM|altsyncram:altsyncram_component" with the following parameter:
-    Info (12134): Parameter "address_aclr_a" = "NONE"
-    Info (12134): Parameter "address_aclr_b" = "NONE"
-    Info (12134): Parameter "address_reg_b" = "CLOCK1"
-    Info (12134): Parameter "byte_size" = "8"
-    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
-    Info (12134): Parameter "byteena_aclr_b" = "NONE"
-    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
-    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
-    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
-    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
-    Info (12134): Parameter "enable_ecc" = "FALSE"
-    Info (12134): Parameter "implement_in_les" = "OFF"
-    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
-    Info (12134): Parameter "indata_aclr_b" = "NONE"
-    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "instruction_mem.hex"
-    Info (12134): Parameter "init_file_layout" = "PORT_A"
-    Info (12134): Parameter "maximum_depth" = "0"
-    Info (12134): Parameter "numwords_a" = "256"
-    Info (12134): Parameter "numwords_b" = "0"
-    Info (12134): Parameter "operation_mode" = "ROM"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
-    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
-    Info (12134): Parameter "ram_block_type" = "AUTO"
-    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
-    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
-    Info (12134): Parameter "width_a" = "32"
-    Info (12134): Parameter "width_b" = "1"
-    Info (12134): Parameter "width_byteena_a" = "1"
-    Info (12134): Parameter "width_byteena_b" = "1"
-    Info (12134): Parameter "width_eccstatus" = "3"
-    Info (12134): Parameter "widthad_a" = "8"
-    Info (12134): Parameter "widthad_b" = "1"
-    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
-    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uts3.tdf
-    Info (12023): Found entity 1: altsyncram_uts3
-Info (12128): Elaborating entity "altsyncram_uts3" for hierarchy "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated"
-Info (12128): Elaborating entity "EIGHT_BIT_TWO_TO_ONE" for hierarchy "EIGHT_BIT_TWO_TO_ONE:BR_MUX"
-Info (12128): Elaborating entity "ONE_BIT_SELECT" for hierarchy "EIGHT_BIT_TWO_TO_ONE:BR_MUX|ONE_BIT_SELECT:\GEN_ONE_BIT_SELECT:0:SELX"
-Info (12128): Elaborating entity "IF_ID_Reg" for hierarchy "IF_ID_Reg:IF_ID"
-Warning (10036): Verilog HDL or VHDL warning at IF_ID_Reg.vhd(31): object "d_qBar" assigned a value but never read
-Info (12128): Elaborating entity "REG_FILE" for hierarchy "REG_FILE:REGISTER_FILE"
-Info (12128): Elaborating entity "EIGHT_BIT_32_TO_1" for hierarchy "REG_FILE:REGISTER_FILE|EIGHT_BIT_32_TO_1:SEL_R1"
-Info (12128): Elaborating entity "EIGHT_BIT_SIXTEEN_TO_ONE" for hierarchy "REG_FILE:REGISTER_FILE|EIGHT_BIT_32_TO_1:SEL_R1|EIGHT_BIT_SIXTEEN_TO_ONE:SEL_1TO4"
-Info (12128): Elaborating entity "EIGHT_BIT_FOUR_TO_ONE" for hierarchy "REG_FILE:REGISTER_FILE|EIGHT_BIT_32_TO_1:SEL_R1|EIGHT_BIT_SIXTEEN_TO_ONE:SEL_1TO4|EIGHT_BIT_FOUR_TO_ONE:SEL_1TO4"
-Info (12128): Elaborating entity "ONE_BIT_1_TO_32" for hierarchy "REG_FILE:REGISTER_FILE|ONE_BIT_1_TO_32:SEL_WRITE"
-Info (12128): Elaborating entity "equalTest" for hierarchy "equalTest:EQTEST"
-Info (12128): Elaborating entity "clockInverter" for hierarchy "clockInverter:CLK_INV"
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[0]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[1]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[2]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[3]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[4]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[5]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[6]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[7]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[8]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[9]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[10]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[11]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[12]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[13]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[14]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[15]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[16]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[17]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[18]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[19]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[20]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[21]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[22]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[23]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[24]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[25]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[26]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[27]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[28]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[29]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[30]"
-        Warning (14320): Synthesized away node "instruction_mem:MEM_ROM|altsyncram:altsyncram_component|altsyncram_uts3:auto_generated|q_a[31]"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "MuxOut[0]" is stuck at GND
-    Warning (13410): Pin "MuxOut[1]" is stuck at GND
-    Warning (13410): Pin "MuxOut[2]" is stuck at GND
-    Warning (13410): Pin "MuxOut[3]" is stuck at GND
-    Warning (13410): Pin "MuxOut[4]" is stuck at GND
-    Warning (13410): Pin "MuxOut[5]" is stuck at GND
-    Warning (13410): Pin "MuxOut[6]" is stuck at GND
-    Warning (13410): Pin "MuxOut[7]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[0]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[1]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[2]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[3]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[4]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[5]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[6]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[7]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[8]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[9]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[10]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[11]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[12]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[13]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[14]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[15]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[16]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[17]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[18]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[19]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[20]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[21]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[22]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[23]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[24]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[25]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[26]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[27]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[28]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[29]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[30]" is stuck at GND
-    Warning (13410): Pin "InstructionOut[31]" is stuck at GND
-    Warning (13410): Pin "BranchOut" is stuck at GND
-    Warning (13410): Pin "ZeroOut" is stuck at GND
-    Warning (13410): Pin "MemWriteOut" is stuck at GND
-    Warning (13410): Pin "RegWriteOut" is stuck at GND
-Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (12021): Found 2 design units, including 1 entities, in source file equaltestfivebit.vhd
+    Info (12022): Found design unit 1: equalTestFiveBit-RTL
+    Info (12023): Found entity 1: equalTestFiveBit
+Info (12127): Elaborating entity "Forwarding_Unit" for the top level hierarchy
+Info (12128): Elaborating entity "equalTestFiveBit" for hierarchy "equalTestFiveBit:Compare_ExMemRd_IdExRs"
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ValueSelect[0]"
-    Warning (15610): No output dependent on input pin "ValueSelect[1]"
-    Warning (15610): No output dependent on input pin "ValueSelect[2]"
-    Warning (15610): No output dependent on input pin "InstrSelect[0]"
-    Warning (15610): No output dependent on input pin "InstrSelect[1]"
-    Warning (15610): No output dependent on input pin "InstrSelect[2]"
-    Warning (15610): No output dependent on input pin "GClock"
-    Warning (15610): No output dependent on input pin "GresetBar"
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 44 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Mon Apr 01 23:16:19 2019
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 22 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Wed Apr 03 11:05:06 2019
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 

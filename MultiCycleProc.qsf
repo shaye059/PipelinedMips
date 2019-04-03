@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY MultiCycleProc
+set_global_assignment -name TOP_LEVEL_ENTITY Forwarding_Unit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:22:54  MARCH 27, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
@@ -53,10 +53,14 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE MultiCycleProc.vhd
+set_global_assignment -name VHDL_FILE onebitcomparator.vhd
+set_global_assignment -name VHDL_FILE EightBitComparator.vhd
+set_global_assignment -name VHDL_FILE Hazard_Control_Unit.vhd
+set_global_assignment -name VHDL_FILE Forwarding_Unit.vhd
+set_global_assignment -name VHDL_FILE Ex_Mem_Buffer.vhd
+set_global_assignment -name VHDL_FILE CONTROL_UNIT.vhd
+set_global_assignment -name VHDL_FILE FOUR_MULTIPLIER.vhd
 set_global_assignment -name VHDL_FILE EIGHT_BIT_SIXTEEN_TO_ONE.vhd
 set_global_assignment -name VHDL_FILE EIGHT_BIT_FOUR_TO_ONE.vhd
 set_global_assignment -name VHDL_FILE EIGHT_BIT_TWO_TO_ONE.vhd
@@ -74,4 +78,8 @@ set_global_assignment -name HEX_FILE instruction_mem.hex
 set_global_assignment -name QIP_FILE instruction_mem.qip
 set_global_assignment -name VHDL_FILE IF_ID_Reg.vhd
 set_global_assignment -name VHDL_FILE equalTest.vhd
+set_global_assignment -name VHDL_FILE equalTestFiveBit.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

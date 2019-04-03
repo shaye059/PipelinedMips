@@ -12,47 +12,77 @@
 # ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd}
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 10:25:11 on Apr 01,2019
-# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd 
+# Start time: 10:39:45 on Apr 03,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity equalTest
-# -- Compiling architecture RTL of equalTest
-# End time: 10:25:11 on Apr 01,2019, Elapsed time: 0:00:00
+# -- Compiling entity Forwarding_Unit
+# -- Compiling architecture structual of Forwarding_Unit
+# End time: 10:39:46 on Apr 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 10:39:46 on Apr 03,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalTestFiveBit
+# -- Compiling architecture RTL of equalTestFiveBit
+# End time: 10:39:46 on Apr 03,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.equaltest
+vsim work.forwarding_unit
 # vsim -gui "+altera" -l msim_transcript -do "MultiCycleProc_run_msim_rtl_vhdl.do" 
-# Start time: 10:25:19 on Apr 01,2019
+# Start time: 10:40:00 on Apr 03,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.equaltest(rtl)
+# Loading work.forwarding_unit(structual)
+# Loading work.equaltestfivebit(rtl)
 view -new wave
 # -new not supported on PE
 add wave -position insertpoint  \
-sim:/equaltest/numA \
-sim:/equaltest/numB \
-sim:/equaltest/brSig \
-sim:/equaltest/TEMP
-force -freeze sim:/equaltest/numA 00001000 0
-force -freeze sim:/equaltest/numB 00001000 0
+sim:/forwarding_unit/ID_EX_Rs \
+sim:/forwarding_unit/ID_EX_Rt \
+sim:/forwarding_unit/EX_MEM_Rd \
+sim:/forwarding_unit/MEM_WB_Rd \
+sim:/forwarding_unit/EX_MEM_RegWrite \
+sim:/forwarding_unit/MEM_WB_RegWrite \
+sim:/forwarding_unit/ForwardA \
+sim:/forwarding_unit/ForwardB
+force -freeze sim:/forwarding_unit/EX_MEM_RegWrite 1 0
+force -freeze sim:/forwarding_unit/EX_MEM_Rd 00001 0
+force -freeze sim:/forwarding_unit/ID_EX_Rs 00001 0
+force -freeze sim:/forwarding_unit/ID_EX_Rt 00001 0
 run
-force -freeze sim:/equaltest/numA 00001001 0
+force -freeze sim:/forwarding_unit/MEM_WB_RegWrite 0 0
+force -freeze sim:/forwarding_unit/MEM_WB_Rd 00000 0
 run
-force -freeze sim:/equaltest/numB 01000010 0
+force -freeze sim:/forwarding_unit/ID_EX_Rt 01010 0
 run
-force -freeze sim:/equaltest/numA 01000010 0
+force -freeze sim:/forwarding_unit/ID_EX_Rs 10101 0
 run
-force -freeze sim:/equaltest/numB 01000011 0
+force -freeze sim:/forwarding_unit/ID_EX_Rs 00000 0
+force -freeze sim:/forwarding_unit/EX_MEM_Rd 00000 0
 run
-force -freeze sim:/equaltest/numA 11111111 0
-force -freeze sim:/equaltest/numB 11111111 0
+force -freeze sim:/forwarding_unit/MEM_WB_RegWrite 1 0
+force -freeze sim:/forwarding_unit/MEM_WB_Rd 00001 0
+force -freeze sim:/forwarding_unit/EX_MEM_RegWrite 0 0
+force -freeze sim:/forwarding_unit/EX_MEM_Rd 00000 0
+force -freeze sim:/forwarding_unit/ID_EX_Rs 00001 0
+force -freeze sim:/forwarding_unit/MEM_WB_Rd 00001 0
+force -freeze sim:/forwarding_unit/ID_EX_Rs 00001 0
 run
-force -freeze sim:/equaltest/numB 00000000 0
+force -freeze sim:/forwarding_unit/EX_MEM_RegWrite 1 0
+force -freeze sim:/forwarding_unit/EX_MEM_Rd 00010 0
+force -freeze sim:/forwarding_unit/ID_EX_Rt 00010 0
+force -freeze sim:/forwarding_unit/ID_EX_Rt 00011 0
+force -freeze sim:/forwarding_unit/MEM_WB_Rd 00001 0
+force -freeze sim:/forwarding_unit/ID_EX_Rt 00001 0
 run
-# End time: 10:56:13 on Apr 01,2019, Elapsed time: 0:30:54
+# End time: 11:02:19 on Apr 03,2019, Elapsed time: 0:22:19
 # Errors: 1, Warnings: 0

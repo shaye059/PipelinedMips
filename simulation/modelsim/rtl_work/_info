@@ -7,36 +7,36 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/simulation/modelsim
-Eequaltest
-Z1 w1554128518
+Z0 dC:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/simulation/modelsim
+Eequaltestfivebit
+Z1 w1554301813
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd
-Z5 FC:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd
+Z4 8C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd
+Z5 FC:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd
 l0
 L19
-VHD?[3af;Q?mlFkSh<l:SS3
-!s100 0U7UB:i0Y6cHm3ZO2oSNd2
+VS0VWd89HOIVLIJ4^CPElC2
+!s100 mjM[j]?XAgidaf<P:UhFc0
 Z6 OV;C;10.3c;59
 31
-Z7 !s110 1554128711
+Z7 !s110 1554302386
 !i10b 1
-Z8 !s108 1554128711.160000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd|
-Z10 !s107 C:/Users/spenc/Uni Third Year/CEG3156/Labs/Lab3/equalTest.vhd|
+Z8 !s108 1554302386.154000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd|
+Z10 !s107 C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1
 Artl
 R2
 R3
-DEx4 work 9 equaltest 0 22 HD?[3af;Q?mlFkSh<l:SS3
+DEx4 work 16 equaltestfivebit 0 22 S0VWd89HOIVLIJ4^CPElC2
 l33
 L27
-VYm:j41dcFBlBBFFlc3kGm2
-!s100 GQMQTkh?Xl<iCQIXL1`hz2
+VeV>NlnBWoHCE1HINc`4H=0
+!s100 EU62Nb4o7VUgZ=<_F0NYj2
 R6
 31
 R7
@@ -44,6 +44,45 @@ R7
 R8
 R9
 R10
+!i113 1
+R11
+R12
+Eforwarding_unit
+Z13 w1554302325
+R2
+R3
+R0
+Z14 8C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd
+Z15 FC:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd
+l0
+L19
+VzU>>zOiSK1_DYOP94?AB30
+!s100 XnK<UJOXD_b@m8eDAFMD:1
+R6
+31
+Z16 !s110 1554302385
+!i10b 1
+Z17 !s108 1554302385.712000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd|
+Z19 !s107 C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd|
+!i113 1
+R11
+R12
+Astructual
+R2
+R3
+DEx4 work 15 forwarding_unit 0 22 zU>>zOiSK1_DYOP94?AB30
+l64
+L41
+V7ZH]`dIT5YA;=EbSC`B4A3
+!s100 QO_O@A]<TZXg77:S[kd=S1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
 !i113 1
 R11
 R12
