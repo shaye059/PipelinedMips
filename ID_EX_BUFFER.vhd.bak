@@ -1,0 +1,144 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY ID_EX_Reg IS
+	PORT(	
+		i_clock : IN	STD_LOGIC;
+		G_reset: IN STD_LOGIC;
+		
+		
+		--control
+		MemToReg: IN STD_LOGIC;
+		RegWrite: IN STD_LOGIC;
+		MemWrite: IN STD_LOGIC;
+		MemRead: IN STD_LOGIC;
+		ALUSrc: IN STD_LOGIC;
+		ALUOp: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		RegDst: IN STD_LOGIC;
+		
+		MemtoReg_Out: out std_logic;
+		RegWrite_Out: out std_logic;
+		MemWrite_Out: out std_logic;
+		MemRead_Out: out std_logic;
+		ALUSrc_Out: Out STD_LOGIC;
+		ALUOp_Out: Out STD_LOGIC_VECTOR(2 DOWNTO 0);
+		RegDst_Out: Out STD_LOGIC;
+		
+		
+		insruction_in_extend : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+		--instruction_in_reg1: IN STD_LOGICVECTOR(5 DOWNTO 0);
+		READ_DATA1, READ_DATA2 : IN STD_logic_vector(7 DOWNTO 0);
+		
+		instruction_in_20_16 :IN STD_LOGICVECTOR(4 DOWNTO 0); --reg2
+		instruction_in_25_21 :IN STD_LOGICVECTOR(4 DOWNTO 0); --reg1
+		instruction_in_15_11 :IN STD_LOGICVECTOR(4 DOWNTO 0);
+		
+		
+		
+		instruction_out_15_11 :OUT STD_LOGICVECTOR(4 DOWNTO 0);
+		instruction_out_25_21 :OUT STD_LOGICVECTOR(4 DOWNTO 0);
+		instruction_out_20_16 :OUT STD_LOGICVECTOR(4 DOWNTO 0);
+		--instruction_out_reg1 : OUT STD_LOGICVECTOR(5 DOWNTO 0);
+		insruction_out_extend : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+		READ_DATA1_out, READ_DATA2_out : OUT STD_logic_vector(7 DOWNTO 0)
+		
+		);
+		
+END ID_EX_Reg;
+
+
+
+
+ARCHITECTURE rtl OF ID_EX_Reg IS
+	SIGNAL d_qBar: STD_LOGIC_VECTOR(44 DOWNTO 0);
+	SIGNAL  resetBar, load : STD_LOGIC;
+	
+	COMPONENT enARdFF_2
+	port(
+		i_resetBar	: IN	STD_LOGIC;
+		i_d		: IN	STD_LOGIC;
+		i_enable	: IN	STD_LOGIC;
+		i_clock		: IN	STD_LOGIC;
+		o_q, o_qBar	: OUT	STD_LOGIC
+		);
+	END COMPONENT;
+	
+	
+BEGIN
+	
+	
+	load <= '1'; --Load is always active	
+	
+	resetBar <= G_reset;  	--asynchronous FLUSH.
+	
+	
+		--Control bits
+	MemtoRegFF: enARdFF_2 PORT MAP (resetBar, MemtoReg, load, Clock, MemtoReg_Out, d_qBar(44));
+	RegWriteFF: enARdFF_2 PORT MAP (resetBar, RegWrite, load, Clock, RegWrite_Out, d_qBar(43));
+	MemWriteFF: enARdFF_2 PORT MAP (resetBar, MemWrite, load, Clock, MemWrite_Out, d_qBar(42));
+	MemReadFF: enARdFF_2 PORT MAP (resetBar, MemtoReg, load, Clock, MemtoReg_Out, d_qBar(41));
+	ALUSrcFF: enARdFF_2 PORT MAP (resetBar, ALUSrc, load, Clock, ALUSrc_Out, d_qBar(40));
+	RegDstFF: enARdFF_2 PORT MAP (resetBar, RegDst, load, Clock, RegDst_Out, d_qBar(39));
+	ALUOpbit1: enARdFF_2 PORT MAP (resetBar, ALUOp(1), load, Clock, ALUOp_Out(1), d_qBar(38));
+	ALUOpbit0: enARdFF_2 PORT MAP (resetBar, ALUOp(0), load, Clock, ALUOp_Out(0), d_qBar(37)); 
+	
+	
+	
+	
+	
+	insruction_extend_bit5: enARdFF_2 PORT MAP (resetBar, insruction_in_extend(5), load, Clock, insruction_out_extend(5), d_qBar(36));
+	insruction_extend_bit4: enARdFF_2 PORT MAP (resetBar, insruction_in_extend(4), load, Clock, insruction_out_extend(4), d_qBar(35));
+	insruction_extend_bit3: enARdFF_2 PORT MAP (resetBar, insruction_in_extend(3), load, Clock, insruction_out_extend(3), d_qBar(34));
+	insruction_extend_bit2: enARdFF_2 PORT MAP (resetBar, insruction_in_extend(2), load, Clock, insruction_out_extend(2), d_qBar(33));
+	insruction_extend_bit1: enARdFF_2 PORT MAP (resetBar, insruction_in_extend(1), load, Clock, insruction_out_extend(1), d_qBar(32));
+	insruction_extend_bit0: enARdFF_2 PORT MAP (resetBar, insruction_in_extend(0), load, Clock, insruction_out_extend(0), d_qBar(31));
+	
+	
+	instruction_20_16_bit4: enARdFF_2 PORT MAP (resetBar, instruction_in_20_16(4), load, Clock, instruction_out_25_21(4), d_qBar(30));
+	instruction_20_16_bit3: enARdFF_2 PORT MAP (resetBar, instruction_in_20_16(4), load, Clock, instruction_out_25_21(3), d_qBar(29));
+	instruction_20_16_bit2: enARdFF_2 PORT MAP (resetBar, instruction_in_20_16(2), load, Clock, instruction_out_25_21(2), d_qBar(28));
+	instruction_20_16_bit1: enARdFF_2 PORT MAP (resetBar, instruction_in_20_16(1), load, Clock, instruction_out_25_21(1), d_qBar(27));
+	instruction_20_16_bit0: enARdFF_2 PORT MAP (resetBar, instruction_in_20_16(0), load, Clock, instruction_out_25_21(0), d_qBar(26));
+	
+	
+	instruction_15_11_bit4: enARdFF_2 PORT MAP (resetBar, instruction_in_15_11(4), load, Clock, instruction_out_15_11(4), d_qBar(25));
+	instruction_15_11_bit3: enARdFF_2 PORT MAP (resetBar, instruction_in_15_11(4), load, Clock, instruction_out_15_11(3), d_qBar(24));
+	instruction_15_11_bit2: enARdFF_2 PORT MAP (resetBar, instruction_in_15_11(2), load, Clock, instruction_out_15_11(2), d_qBar(23));
+	instruction_15_11_bit1: enARdFF_2 PORT MAP (resetBar, instruction_in_15_11(1), load, Clock, instruction_out_15_11(1), d_qBar(22));
+	instruction_15_11_bit0: enARdFF_2 PORT MAP (resetBar, instruction_in_15_11(0), load, Clock, instruction_out_15_11(0), d_qBar(21));
+	
+	
+	instruction_25_21_bit4: enARdFF_2 PORT MAP (resetBar, instruction_in_25_21(4), load, Clock, instruction_out_25_21(4), d_qBar(20));
+	instruction_25_21_bit3: enARdFF_2 PORT MAP (resetBar, instruction_in_25_21(4), load, Clock, instruction_out_25_21(3), d_qBar(19));
+	instruction_25_21_bit2: enARdFF_2 PORT MAP (resetBar, instruction_in_25_21(2), load, Clock, instruction_out_25_21(2), d_qBar(18));
+	instruction_25_21_bit1: enARdFF_2 PORT MAP (resetBar, instruction_in_25_21(1), load, Clock, instruction_out_25_21(1), d_qBar(17));
+	instruction_25_21_bit0: enARdFF_2 PORT MAP (resetBar, instruction_in_25_21(0), load, Clock, instruction_out_25_21(0), d_qBar(16));
+	
+	READ_DATA1_bit7: enARdFF_2 PORT MAP (resetBar, READ_DATA1(7), load, Clock, READ_DATA1_out(2), d_qBar(15));
+	READ_DATA1_bit6: enARdFF_2 PORT MAP (resetBar, READ_DATA1(6), load, Clock, READ_DATA1_out(4), d_qBar(14));
+	READ_DATA1_bit5: enARdFF_2 PORT MAP (resetBar, READ_DATA1(5), load, Clock, READ_DATA1_out(3), d_qBar(13));
+	READ_DATA1_bit4: enARdFF_2 PORT MAP (resetBar, READ_DATA1(4), load, Clock, READ_DATA1_out(2), d_qBar(12));
+	READ_DATA1_bit3: enARdFF_2 PORT MAP (resetBar, READ_DATA1(3), load, Clock, READ_DATA1_out(1), d_qBar(11));
+	READ_DATA1_bit2: enARdFF_2 PORT MAP (resetBar, READ_DATA1(2), load, Clock, READ_DATA1_out(0), d_qBar(10));
+	READ_DATA1_bit1: enARdFF_2 PORT MAP (resetBar, READ_DATA1(1), load, Clock, READ_DATA1_out(4), d_qBar(9));
+	READ_DATA1_bit0: enARdFF_2 PORT MAP (resetBar, READ_DATA1(0), load, Clock, READ_DATA1_out(3), d_qBar(8));
+	
+	
+	READ_DATA2_bit7: enARdFF_2 PORT MAP (resetBar, READ_DATA2(7), load, Clock, READ_DATA2_out(7), d_qBar(7));
+	READ_DATA2_bit6: enARdFF_2 PORT MAP (resetBar, READ_DATA2(6), load, Clock, READ_DATA2_out(6), d_qBar(6));
+	READ_DATA2_bit5: enARdFF_2 PORT MAP (resetBar, READ_DATA2(5), load, Clock, READ_DATA2_out(5), d_qBar(5));
+	READ_DATA2_bit4: enARdFF_2 PORT MAP (resetBar, READ_DATA2(4), load, Clock, READ_DATA2_out(4), d_qBar(4));
+	READ_DATA2_bit3: enARdFF_2 PORT MAP (resetBar, READ_DATA2(3), load, Clock, READ_DATA2_out(3), d_qBar(3));
+	READ_DATA2_bit2: enARdFF_2 PORT MAP (resetBar, READ_DATA2(2), load, Clock, READ_DATA2_out(2), d_qBar(2));
+	READ_DATA2_bit1: enARdFF_2 PORT MAP (resetBar, READ_DATA2(1), load, Clock, READ_DATA2_out(1), d_qBar(1));
+	READ_DATA2_bit0: enARdFF_2 PORT MAP (resetBar, READ_DATA2(0), load, Clock, READ_DATA2_out(0), d_qBar(0));
+	
+	
+	
+	
+	
+	
+	
+	
+
+	END RTL;

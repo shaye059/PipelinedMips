@@ -12,77 +12,359 @@
 # ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/MultiCycleProc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:27 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/MultiCycleProc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MultiCycleProc
+# -- Compiling architecture RTL of MultiCycleProc
+# End time: 12:25:28 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_EIGHT_TO_ONE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:28 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_EIGHT_TO_ONE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EIGHT_BIT_EIGHT_TO_ONE
+# -- Compiling architecture stru of EIGHT_BIT_EIGHT_TO_ONE
+# End time: 12:25:28 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Mem_Wb_Buffer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:28 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Mem_Wb_Buffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mem_Wb_Buffer
+# -- Compiling architecture structual of Mem_Wb_Buffer
+# End time: 12:25:28 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/FIVE_BIT_TWO_TO_ONE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:28 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/FIVE_BIT_TWO_TO_ONE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FIVE_BIT_TWO_TO_ONE
+# -- Compiling architecture stru of FIVE_BIT_TWO_TO_ONE
+# End time: 12:25:29 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:29 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONE_BIT_ALU
+# -- Compiling architecture RTL of ONE_BIT_ALU
+# End time: 12:25:29 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_4_TO_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:29 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_4_TO_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONE_BIT_4_TO_1
+# -- Compiling architecture RTL of ONE_BIT_4_TO_1
+# End time: 12:25:30 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_2_TO_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:30 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_2_TO_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONE_BIT_2_TO_1
+# -- Compiling architecture RTL of ONE_BIT_2_TO_1
+# End time: 12:25:30 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/MAIN_ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:30 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/MAIN_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAIN_ALU
+# -- Compiling architecture RTL of MAIN_ALU
+# End time: 12:25:31 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ALU_CONTROL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:31 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ALU_CONTROL.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_CONTROL
+# -- Compiling architecture stru of ALU_CONTROL
+# End time: 12:25:31 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ID_EX_BUFFER.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:31 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ID_EX_BUFFER.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX_BUFFER
+# -- Compiling architecture rtl of ID_EX_BUFFER
+# End time: 12:25:32 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Hazard_Control_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:32 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Hazard_Control_Unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Hazard_Control_Unit
+# -- Compiling architecture structual of Hazard_Control_Unit
+# End time: 12:25:32 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 10:39:45 on Apr 03,2019
+# Start time: 12:25:32 on Apr 05,2019
 # vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Forwarding_Unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Forwarding_Unit
 # -- Compiling architecture structual of Forwarding_Unit
-# End time: 10:39:46 on Apr 03,2019, Elapsed time: 0:00:01
+# End time: 12:25:33 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Ex_Mem_Buffer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:33 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/Ex_Mem_Buffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Ex_Mem_Buffer
+# -- Compiling architecture Structual of Ex_Mem_Buffer
+# End time: 12:25:33 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/CONTROL_UNIT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:33 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/CONTROL_UNIT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CONTROL_UNIT
+# -- Compiling architecture stru of CONTROL_UNIT
+# End time: 12:25:34 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/FOUR_MULTIPLIER.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:34 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/FOUR_MULTIPLIER.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FOUR_MULTIPLIER
+# -- Compiling architecture stru of FOUR_MULTIPLIER
+# End time: 12:25:34 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_SIXTEEN_TO_ONE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:34 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_SIXTEEN_TO_ONE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EIGHT_BIT_SIXTEEN_TO_ONE
+# -- Compiling architecture stru of EIGHT_BIT_SIXTEEN_TO_ONE
+# End time: 12:25:35 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_FOUR_TO_ONE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:35 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_FOUR_TO_ONE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EIGHT_BIT_FOUR_TO_ONE
+# -- Compiling architecture stru of EIGHT_BIT_FOUR_TO_ONE
+# End time: 12:25:35 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_TWO_TO_ONE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:35 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_TWO_TO_ONE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EIGHT_BIT_TWO_TO_ONE
+# -- Compiling architecture stru of EIGHT_BIT_TWO_TO_ONE
+# End time: 12:25:36 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_1_TO_32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:36 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_1_TO_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONE_BIT_1_TO_32
+# -- Compiling architecture stru of ONE_BIT_1_TO_32
+# End time: 12:25:36 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_32_TO_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:36 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_32_TO_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EIGHT_BIT_32_TO_1
+# -- Compiling architecture stru of EIGHT_BIT_32_TO_1
+# End time: 12:25:37 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/clockInverter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:37 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/clockInverter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clockInverter
+# -- Compiling architecture RTL of clockInverter
+# End time: 12:25:37 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/REG_FILE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:37 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/REG_FILE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG_FILE
+# -- Compiling architecture RTL of REG_FILE
+# End time: 12:25:37 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/OneBitAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:37 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/OneBitAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitAdder
+# -- Compiling architecture rtl of oneBitAdder
+# End time: 12:25:38 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_SELECT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:38 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/ONE_BIT_SELECT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ONE_BIT_SELECT
+# -- Compiling architecture BEHAV of ONE_BIT_SELECT
+# End time: 12:25:38 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/enardFF_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:38 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/enardFF_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity enARdFF_2
+# -- Compiling architecture rtl of enARdFF_2
+# End time: 12:25:39 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/PC_Adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:39 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/PC_Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_Adder
+# -- Compiling architecture AdderArch of PC_Adder
+# End time: 12:25:39 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_REG.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:39 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/EIGHT_BIT_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EIGHT_BIT_REG
+# -- Compiling architecture rtl of EIGHT_BIT_REG
+# End time: 12:25:40 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/instruction_mem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:40 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/instruction_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity instruction_mem
+# -- Compiling architecture SYN of instruction_mem
+# End time: 12:25:40 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/IF_ID_Reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:40 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/IF_ID_Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID_Reg
+# -- Compiling architecture rtl of IF_ID_Reg
+# End time: 12:25:41 on Apr 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTest.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:41 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTest.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalTest
+# -- Compiling architecture RTL of equalTest
+# End time: 12:25:41 on Apr 05,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 10:39:46 on Apr 03,2019
+# Start time: 12:25:41 on Apr 05,2019
 # vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/equalTestFiveBit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity equalTestFiveBit
 # -- Compiling architecture RTL of equalTestFiveBit
-# End time: 10:39:46 on Apr 03,2019, Elapsed time: 0:00:00
+# End time: 12:25:41 on Apr 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/data_mem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 12:25:41 on Apr 05,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/spenc/Uni Third Year/CEG3156/Labs/PipelinedMips/data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity data_mem
+# -- Compiling architecture SYN of data_mem
+# End time: 12:25:42 on Apr 05,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.forwarding_unit
-# vsim -gui "+altera" -l msim_transcript -do "MultiCycleProc_run_msim_rtl_vhdl.do" 
-# Start time: 10:40:00 on Apr 03,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.forwarding_unit(structual)
-# Loading work.equaltestfivebit(rtl)
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/forwarding_unit/ID_EX_Rs \
-sim:/forwarding_unit/ID_EX_Rt \
-sim:/forwarding_unit/EX_MEM_Rd \
-sim:/forwarding_unit/MEM_WB_Rd \
-sim:/forwarding_unit/EX_MEM_RegWrite \
-sim:/forwarding_unit/MEM_WB_RegWrite \
-sim:/forwarding_unit/ForwardA \
-sim:/forwarding_unit/ForwardB
-force -freeze sim:/forwarding_unit/EX_MEM_RegWrite 1 0
-force -freeze sim:/forwarding_unit/EX_MEM_Rd 00001 0
-force -freeze sim:/forwarding_unit/ID_EX_Rs 00001 0
-force -freeze sim:/forwarding_unit/ID_EX_Rt 00001 0
-run
-force -freeze sim:/forwarding_unit/MEM_WB_RegWrite 0 0
-force -freeze sim:/forwarding_unit/MEM_WB_Rd 00000 0
-run
-force -freeze sim:/forwarding_unit/ID_EX_Rt 01010 0
-run
-force -freeze sim:/forwarding_unit/ID_EX_Rs 10101 0
-run
-force -freeze sim:/forwarding_unit/ID_EX_Rs 00000 0
-force -freeze sim:/forwarding_unit/EX_MEM_Rd 00000 0
-run
-force -freeze sim:/forwarding_unit/MEM_WB_RegWrite 1 0
-force -freeze sim:/forwarding_unit/MEM_WB_Rd 00001 0
-force -freeze sim:/forwarding_unit/EX_MEM_RegWrite 0 0
-force -freeze sim:/forwarding_unit/EX_MEM_Rd 00000 0
-force -freeze sim:/forwarding_unit/ID_EX_Rs 00001 0
-force -freeze sim:/forwarding_unit/MEM_WB_Rd 00001 0
-force -freeze sim:/forwarding_unit/ID_EX_Rs 00001 0
-run
-force -freeze sim:/forwarding_unit/EX_MEM_RegWrite 1 0
-force -freeze sim:/forwarding_unit/EX_MEM_Rd 00010 0
-force -freeze sim:/forwarding_unit/ID_EX_Rt 00010 0
-force -freeze sim:/forwarding_unit/ID_EX_Rt 00011 0
-force -freeze sim:/forwarding_unit/MEM_WB_Rd 00001 0
-force -freeze sim:/forwarding_unit/ID_EX_Rt 00001 0
-run
-# End time: 11:02:19 on Apr 03,2019, Elapsed time: 0:22:19
-# Errors: 1, Warnings: 0

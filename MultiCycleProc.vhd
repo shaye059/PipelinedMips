@@ -21,7 +21,7 @@ use ieee.std_logic_1164.all;
 --
 entity MultiCycleProc is
 	port(
-		ValueSelect, InstrSelect : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		ValueSelect : IN STD_LOGIC_VECTOR(2 DOWNTO 0); --InstrSelect
 		GClock, GresetBar : IN STD_LOGIC;
 		MuxOut : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 		InstructionOut: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -34,28 +34,31 @@ entity MultiCycleProc is
 -------------------------------------------------------------------------------
 --  Signals
 -------------------------------------------------------------------------------
-	signal PC_IN, PC_OUT, PC_INC_OUT, REG_READ1, REG_READ2, WRITE_DATA_IN, ALU_MUX_OUT, ALU_RESULT, READ_DATA, PC_ADD2, 
-	PC_BRANCH_ADR, PC_MUX1_OUT, LAST_MUX_INPUT, IF_ID_PC, MEM_WB_WRITE_DATA_IN, CLR_MUX_IN, CNTRL_OUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	signal PC_IN, PC_OUT, PC_INC_OUT, REG_READ1, REG_READ2, PC_ADD2, 
+		PC_BRANCH_ADR, IF_ID_PC, MEM_WB_WRITE_DATA_IN, CLR_MUX_IN, CNTRL_OUT, ID_EX_READ_DATA1_out,
+		ID_EX_READ_DATA2_out, EX_MEM_ALU_RESULT_OUT, ALU_IN_A, ALU_IN_B, ALU_B1_MUX, ID_EX_insruction_out_extend, 
+		EX_MEM_ALU_RESULT_IN, MEM_WB_READ_DATA, MEM_WB_ALU_RESULT_OUT, MEM_WB_READ_DATA_OUT, EX_MEM_ALU_B1_MUX_OUT,
+		LAST_MUX_INPUT: STD_LOGIC_VECTOR(7 DOWNTO 0);
 	
 	signal INSTRUCTION_OUT, IF_ID_INSTRUCTION : STD_LOGIC_VECTOR(31 DOWNTO 0);
-	signal WRITE_REG_IN, MEM_WB_WRITE_REG_IN : STD_LOGIC_VECTOR(4 DOWNTO 0);
+	
+	signal IF_ID_Rt_OUT, IF_ID_Rs_OUT, ID_EX_Rt_OUT, ID_EX_Rs_OUT, ID_EX_Rd_OUT, EX_MEM_Rd, 
+		MEM_WB_Rd, EX_MEM_WRITE_REG_IN : STD_LOGIC_VECTOR(4 DOWNTO 0);
+	
 	signal ALU_CONTROL_OUT : STD_LOGIC_VECTOR(2 DOWNTO 0);
-	signal RegDst, RegWrite, ALUSrc, ZERO_SIG, MemWrite, BRANCH_ZERO_SIG, Jump, MemToReg, BRANCH, MemRead, InvertedClock, 
-	PCSrc, IFFlush, IFStall, MEM_WB_REG_WRITE_SIG, BR_EQUAL_SIG, HazardClr: STD_LOGIC;
-	signal ALUOp : STD_LOGIC_VECTOR(1 DOWNTO 0);
+	
+	signal RegDst, RegWrite, ALUSrc, MemWrite, Jump, MemToReg, BRANCH, MemRead, InvertedClock, IFFlush, BR_EQUAL_SIG,
+	HazardClr,PC_Stall_Sig, PC_Stall, Branch_Sig, ID_EX_MemtoReg_Out, ID_EX_RegWrite_Out, ID_EX_MemWrite_Out, ID_EX_MemRead_Out, ID_EX_ALUSrc_Out, 
+	ID_EX_RegDst_Out, ID_EX_Clear, ZERO, MEM_WB_RegWrite, EX_MEM_MemToReg_Out, EX_MEM_RegWrite_Out, EX_MEM_MemWrite_Out, 
+	EX_MEM_MemRead_Out, MEM_WB_MemToReg : STD_LOGIC;
+	
+	signal ALUOp, ID_EX_ALUOp_Out, ForwardA, ForwardB : STD_LOGIC_VECTOR(1 DOWNTO 0);
+	
 	
 	
 -------------------------------------------------------------------------------
 --  Component Declaration
 -------------------------------------------------------------------------------
-
---	component EIGHT_BIT_32_TO_1
---		port(
---		P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13,P14,P15,P16,P17,P18,P19,P20,P21,P22,P23,P24,P25,P26,P27,P28,P29,P30,P31,P32 : IN std_logic_vector(7 DOWNTO 0);
---		SEL : IN STD_logic_vector(4 DOWNTO 0);
---		Q : OUT STD_logic_vector(7 DOWNTO 0)
---		);
---	end component;
 
 	component EIGHT_BIT_REG
 			PORT(
@@ -92,8 +95,9 @@ entity MultiCycleProc is
 	component IF_ID_Reg
 		PORT(
 		IFFlush, IFStall: IN	STD_LOGIC;
+		i_globalResetBar : IN STD_LOGIC;
 		i_clock : IN	STD_LOGIC;
-		insruction_in : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		instruction_in : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PCinc_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 		insruction_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PCinc_out : OUT	STD_LOGIC_VECTOR(7 DOWNTO 0));
@@ -124,34 +128,6 @@ entity MultiCycleProc is
 
 	end component;
 	
---	component FIVE_BIT_TWO_TO_ONE
---		port(
---		A,B : IN std_logic_vector(4 DOWNTO 0);
---		SEL : IN STD_logic;
---		Q : OUT STD_logic_vector(4 DOWNTO 0)
---		);
---	end component;
---
---	component MAIN_ALU
---		port(
---		A_IN, B_IN : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
---		OPERATION : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
---		ZERO : OUT STD_LOGIC;
---		RESULT : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
---		);
---	end component;
-	
---	component data_mem
---		PORT(
---		address		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
---		clock		: IN STD_LOGIC  := '1';
---		data		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
---		rden		: IN STD_LOGIC  := '1';
---		wren		: IN STD_LOGIC ;
---		q		: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
---		);
---	end component;
-	
 	component FOUR_MULTIPLIER
 		port(
 		BYTE_IN : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -160,22 +136,196 @@ entity MultiCycleProc is
 
 	end component;
 	
---	component ALU_CONTROL
---		port(
---		ALUOp_IN : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
---		INSTRUCTION_OP: IN STD_LOGIC_VECTOR(5 DOWNTO 0);
---		ALU_OP_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
---		);
---	end component;
+	component Hazard_Control_Unit
+		port(
 	
+			--Control Signal
+			ID_EX_MemRead: IN STD_LOGIC;
+			Branch: IN STD_LOGIC;
+			Jump: IN STD_LOGIC;
+			
+			--Register Inputs
+			IF_ID_Rt: IN STD_LOGIC_VECTOR (4 downto 0);
+			IF_ID_Rs: IN STD_LOGIC_VECTOR (4 downto 0);
+			ID_EX_Rt: IN STD_LOGIC_VECTOR (4 downto 0);
+			ID_EX_Rs: IN STD_LOGIC_VECTOR (4 downto 0);
+			
+			--Output signals
+			PC_Stall: Out std_logic;
+			IF_ID_Flush: Out std_logic;
+			MuxSelect: out std_logic
+			
+		);
+
+	end component;
 	
---	component EIGHT_BIT_EIGHT_TO_ONE
---		port(
---		P0,P1,P2,P3,P4,P5,P6,P7 : IN std_logic_vector(7 DOWNTO 0);
---		SEL : IN STD_logic_vector(2 DOWNTO 0);
---		Q : OUT STD_logic_vector(7 DOWNTO 0)
---		);
---	end component;
+	component ID_EX_BUFFER
+		PORT(	
+		Clock : IN	STD_LOGIC;
+		G_reset: IN STD_LOGIC;
+		
+		
+		--control
+		MemToReg: IN STD_LOGIC;
+		RegWrite: IN STD_LOGIC;
+		MemWrite: IN STD_LOGIC;
+		MemRead: IN STD_LOGIC;
+		ALUSrc: IN STD_LOGIC;
+		ALUOp: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+		RegDst: IN STD_LOGIC;
+		
+		MemtoReg_Out: out std_logic;
+		RegWrite_Out: out std_logic;
+		MemWrite_Out: out std_logic;
+		MemRead_Out: out std_logic;
+		ALUSrc_Out: Out STD_LOGIC;
+		ALUOp_Out: Out STD_LOGIC_VECTOR(1 DOWNTO 0);
+		RegDst_Out: Out STD_LOGIC;
+		
+		
+		instruction_in_extend : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		READ_DATA1, READ_DATA2 : IN STD_logic_vector(7 DOWNTO 0);
+		
+		instruction_in_20_16 :IN STD_LOGIC_VECTOR(4 DOWNTO 0); --reg2
+		instruction_in_25_21 :IN STD_LOGIC_VECTOR(4 DOWNTO 0); --reg1
+		instruction_in_15_11 :IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+		
+		
+		
+		instruction_out_15_11 :OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+		instruction_out_25_21 :OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+		instruction_out_20_16 :OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+		instruction_out_extend : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		READ_DATA1_out, READ_DATA2_out : OUT STD_logic_vector(7 DOWNTO 0)
+		
+		);
+
+	end component;
+	
+	component EIGHT_BIT_FOUR_TO_ONE
+		port(
+		P1,P2,P3,P4 : IN std_logic_vector(7 DOWNTO 0);
+		SEL : IN STD_logic_vector(1 DOWNTO 0);
+		Q : OUT STD_logic_vector(7 DOWNTO 0)
+		);
+	end component;
+	
+	component MAIN_ALU
+		port(
+		A_IN, B_IN : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		OPERATION : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		ZERO : OUT STD_LOGIC;
+		RESULT : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+		);
+	end component;
+	
+	component ALU_CONTROL
+		port(
+		ALUOp_IN : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+		INSTRUCTION_OP: IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+		ALU_OP_OUT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+		);
+	end component;
+	
+	component Forwarding_Unit
+		PORT(
+		ID_EX_Rs: IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+		ID_EX_Rt: IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+		EX_MEM_Rd: in std_logic_vector (4 downto 0);
+		MEM_WB_Rd: in std_logic_vector (4 downto 0); 
+		EX_MEM_RegWrite: in std_logic;
+		MEM_WB_RegWrite: in std_logic;
+		ForwardA: out std_logic_vector (1 downto 0);
+		ForwardB: out std_logic_vector (1 downto 0)
+		
+	);
+	end component;
+	
+	component FIVE_BIT_TWO_TO_ONE
+		port(
+		A,B : IN std_logic_vector(4 DOWNTO 0);
+		SEL : IN STD_logic;
+		Q : OUT STD_logic_vector(4 DOWNTO 0)
+		);
+	end component;
+	
+	component Ex_Mem_Buffer
+		port(
+		
+		--Clock & Reset
+		Clock, resetBar: in std_logic;
+		
+		--Control Signals
+		MemtoReg_In: in std_logic;
+		RegWrite_In: in std_logic;
+		MemWrite_In: in std_logic;
+		MemRead_In: in std_logic;
+		
+		MemtoReg_Out: out std_logic;
+		RegWrite_Out: out std_logic;
+		MemWrite_Out: out std_logic;
+		MemRead_Out: out std_logic;
+	
+		
+		--Components
+		ALU_In: in std_logic_vector (7 downto 0);
+		ALU_Out: out std_logic_vector (7 downto 0);
+		
+		Mux_In: in std_logic_vector(4 downto 0);
+		Mux_Out: out std_logic_vector(4 downto 0);
+		
+		RegData_In: in std_logic_vector(7 downto 0);
+		RegData_Out: out std_logic_vector(7 downto 0)
+		
+		);
+	end component;
+	
+	component data_mem
+		PORT(
+		address		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+		clock		: IN STD_LOGIC  := '1';
+		data		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+		rden		: IN STD_LOGIC  := '1';
+		wren		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
+		);
+	end component;
+	
+		component Mem_Wb_Buffer
+		port(
+		
+		--Clock
+		Clock: in std_logic;
+		
+		--Reset
+		G_reset: IN STD_LOGIC;
+		
+		--Control Signals
+		MemtoReg_In: in std_logic;
+		RegWrite_In: in std_logic;
+		
+		MemtoReg_Out: out std_logic;
+		RegWrite_Out: out std_logic;
+		
+		--Component Outputs
+		ALU_In: in std_logic_vector (7 downto 0);
+		ALU_Out: out std_logic_vector (7 downto 0); 
+	
+		DataMem_In: in std_logic_vector (7 downto 0); 
+		DataMem_Out: out std_logic_vector (7 downto 0);
+		
+		Mux_In: in std_logic_vector(4 downto 0);
+		Mux_Out: out std_logic_vector(4 downto 0)
+	);
+	end component;
+	
+	component EIGHT_BIT_EIGHT_TO_ONE
+		port(
+		P0,P1,P2,P3,P4,P5,P6,P7 : IN std_logic_vector(7 DOWNTO 0);
+		SEL : IN STD_logic_vector(2 DOWNTO 0);
+		Q : OUT STD_logic_vector(7 DOWNTO 0)
+		);
+	end component;
 	
 	component clockInverter
 	port(
@@ -192,7 +342,7 @@ entity MultiCycleProc is
 -------------------------------------------------------------------------------
 	
 	--Program Counter
-	PC_REG : EIGHT_BIT_REG port map('1', GresetBar, InvertedClock,PC_IN, PC_OUT);
+	PC_REG : EIGHT_BIT_REG port map(PC_Stall_Sig, GresetBar, InvertedClock,PC_IN, PC_OUT);
 	
 	
 	--PC Incrementer
@@ -202,10 +352,10 @@ entity MultiCycleProc is
 	MEM_ROM : instruction_mem port map(PC_OUT, GClock, INSTRUCTION_OUT);
 	
 	--Branch Decision Mux
-	BR_MUX  : EIGHT_BIT_TWO_TO_ONE port map(PC_INC_OUT, PC_BRANCH_ADR, PCSrc, PC_IN);
+	BR_MUX  : EIGHT_BIT_TWO_TO_ONE port map(PC_INC_OUT, PC_BRANCH_ADR, HazardClr, PC_IN);
 	
 	--IF/ID Register
-	IF_ID : IF_ID_Reg port map(IFFlush, IFStall, GClock,INSTRUCTION_OUT, PC_INC_OUT, IF_ID_INSTRUCTION, IF_ID_PC);
+	IF_ID : IF_ID_Reg port map(IFFlush, PC_Stall,GResetBar, GClock,INSTRUCTION_OUT, PC_INC_OUT, IF_ID_INSTRUCTION, IF_ID_PC);
 	
 	
 -------------------------------------------------------------------------------
@@ -213,8 +363,8 @@ entity MultiCycleProc is
 -------------------------------------------------------------------------------
 	
 	--Register File
-	REGISTER_FILE : REG_FILE port map(IF_ID_INSTRUCTION(25 DOWNTO 21), IF_ID_INSTRUCTION(20 DOWNTO 16), MEM_WB_WRITE_REG_IN, MEM_WB_WRITE_DATA_IN,
-	MEM_WB_REG_WRITE_SIG, GClock, GresetBar, REG_READ1, REG_READ2);
+	REGISTER_FILE : REG_FILE port map(IF_ID_INSTRUCTION(25 DOWNTO 21), IF_ID_INSTRUCTION(20 DOWNTO 16), MEM_WB_Rd, MEM_WB_WRITE_DATA_IN,
+	MEM_WB_RegWrite, GClock, GresetBar, REG_READ1, REG_READ2);
 	
 	--Equal Test
 	EQTEST : equalTest port map(REG_READ1, REG_READ2, BR_EQUAL_SIG);
@@ -228,57 +378,84 @@ entity MultiCycleProc is
 	--Control Unit
 	CNTRL : CONTROL_UNIT port map(IF_ID_INSTRUCTION(31 DOWNTO 26), regDst, Jump, BRANCH, MemToReg, MemWrite, ALUSrc, RegWrite, MemRead, ALUOp);
 	
-	--Flush/Stall Mux
-	CLR_MUX  : EIGHT_BIT_TWO_TO_ONE port map(CLR_MUX_IN, "00000000", HazardClr, CNTRL_OUT);
+	--Flush/Stall Multiplexer
+	CLR_MUX  : EIGHT_BIT_TWO_TO_ONE port map(CLR_MUX_IN, "00000000", ID_EX_Clear, CNTRL_OUT);
+	
+	--Hazard Control Unit
+	HZRD_CNTRL: Hazard_Control_Unit port map(ID_EX_MemRead_Out, Branch_Sig, Jump, IF_ID_INSTRUCTION(20 DOWNTO 16), IF_ID_INSTRUCTION(20 DOWNTO 16),
+	ID_EX_Rt_OUT, ID_EX_Rs_OUT, PC_Stall, IFFlush, HazardClr);
+		
+	--ID/EX Buffer
+	ID_EX : ID_EX_BUFFER port map(GClock, GResetBar, CNTRL_OUT(6), CNTRL_OUT(7), CNTRL_OUT(4), CNTRL_OUT(5), CNTRL_OUT(0), CNTRL_OUT(2 DOWNTO 1),
+		CNTRL_OUT(3), ID_EX_MemtoReg_Out, ID_EX_RegWrite_Out, ID_EX_MemWrite_Out, ID_EX_MemRead_Out, ID_EX_ALUSrc_Out, ID_EX_ALUOp_Out, 
+		ID_EX_RegDst_Out, IF_ID_INSTRUCTION(7 DOWNTO 0), REG_READ1, REG_READ2, IF_ID_INSTRUCTION(20 DOWNTO 16), IF_ID_INSTRUCTION(25 DOWNTO 21),
+		IF_ID_INSTRUCTION(15 DOWNTO 11), ID_EX_Rd_OUT,ID_EX_Rs_OUT,ID_EX_Rt_OUT,ID_EX_insruction_out_extend,
+		ID_EX_READ_DATA1_out, ID_EX_READ_DATA2_out);
 	
 	
+-------------------------------------------------------------------------------
+--  Stage 3
+-------------------------------------------------------------------------------
+	
+	--ALU Input A
+	ALU_MUXA : EIGHT_BIT_FOUR_TO_ONE port map(ID_EX_READ_DATA1_out, MEM_WB_WRITE_DATA_IN, EX_MEM_ALU_RESULT_OUT, EX_MEM_ALU_RESULT_OUT, 
+	ForwardA, ALU_IN_A);
+	
+	--ALU PreInput B
+	ALU_MUXB1 : EIGHT_BIT_FOUR_TO_ONE port map(ID_EX_READ_DATA2_out, MEM_WB_WRITE_DATA_IN, EX_MEM_ALU_RESULT_OUT, EX_MEM_ALU_RESULT_OUT, 
+	ForwardB, ALU_B1_MUX);
+	
+	--ALU Input B
+	ALU_MUXB : EIGHT_BIT_TWO_TO_ONE port map(ALU_B1_MUX, ID_EX_insruction_out_extend, ID_EX_ALUSrc_Out, ALU_IN_B);
+	
+	--Main ALU
+	MAINALU : MAIN_ALU port map(ALU_IN_A, ALU_IN_B, ALU_CONTROL_OUT, ZERO, EX_MEM_ALU_RESULT_IN);
+	
+	--ALU Control Unit
+	ALU_CONTRL : ALU_CONTROL port map(ID_EX_ALUOp_Out, ID_EX_insruction_out_extend(5 DOWNTO 0), ALU_CONTROL_OUT);
+	
+	--Forwarding Unit
+	FWD_UNIT : Forwarding_Unit port map(ID_EX_Rs_OUT, ID_EX_Rt_OUT, EX_MEM_Rd, MEM_WB_Rd, EX_MEM_RegWrite_Out, MEM_WB_RegWrite, ForwardA, ForwardB);
+	
+	--RegDst Mux
+	DST_MUX : FIVE_BIT_TWO_TO_ONE port map(ID_EX_Rt_OUT,ID_EX_Rd_OUT, ID_EX_RegDst_Out, EX_MEM_WRITE_REG_IN);
+	
+	--EX/MEM Buffer
+	EX_MEM : Ex_Mem_Buffer port map(GClock, GResetBar, ID_EX_MemToReg_Out, ID_EX_RegWrite_Out, ID_EX_MemWrite_Out, ID_EX_MemRead_Out, 
+		EX_MEM_MemToReg_Out, EX_MEM_RegWrite_Out, EX_MEM_MemWrite_Out, EX_MEM_MemRead_Out, EX_MEM_ALU_RESULT_IN, EX_MEM_ALU_RESULT_OUT,
+		EX_MEM_WRITE_REG_IN, EX_MEM_Rd, ALU_B1_MUX, EX_MEM_ALU_B1_MUX_OUT);
 	
 	
+-------------------------------------------------------------------------------
+--  Stage 4
+-------------------------------------------------------------------------------
+	
+	--Data Memory
+	MEM_RAM : data_mem port map(EX_MEM_ALU_RESULT_OUT, InvertedClock, EX_MEM_ALU_B1_MUX_OUT, EX_MEM_MemRead_Out, EX_MEM_MemWrite_Out, 
+		MEM_WB_READ_DATA);
+	
+	--MEM/WB Buffer
+	MEM_WB : Mem_Wb_Buffer port map(GClock, GResetBar, EX_MEM_MemToReg_Out, EX_MEM_RegWrite_Out, MEM_WB_MemToReg, MEM_WB_RegWrite,
+		EX_MEM_ALU_RESULT_OUT, MEM_WB_ALU_RESULT_OUT, MEM_WB_READ_DATA, MEM_WB_READ_DATA_OUT, EX_MEM_Rd, MEM_WB_Rd);
+		
+		
+-------------------------------------------------------------------------------
+--  Stage 5
+-------------------------------------------------------------------------------	
+		
+	WB_MUX : EIGHT_BIT_TWO_TO_ONE port map(MEM_WB_ALU_RESULT_OUT, MEM_WB_READ_DATA_OUT, MEM_WB_MemToReg, MEM_WB_WRITE_DATA_IN);
 	
 	
-	
-	
-
-
 
 	--Clock Inverter
 	CLK_INV : clockInverter port map(GClock, InvertedClock);
+		
 	
---	
---	--Write Register Mux
---	WRITE_MUX : FIVE_BIT_TWO_TO_ONE port map(INSTRUCTION_OUT(20 DOWNTO 16), INSTRUCTION_OUT(15 DOWNTO 11), RegDST, WRITE_REG_IN);
---	
---	
---	--ALU Source2 Mux
---	ALU_SRC2 : EIGHT_BIT_TWO_TO_ONE port map(REG_READ2, INSTRUCTION_OUT(7 DOWNTO 0), ALUSrc, ALU_MUX_OUT);
---	
---	--Main ALU
---	DATA_ALU : MAIN_ALU port map(REG_READ1, ALU_MUX_OUT, ALU_CONTROL_OUT, ZERO_SIG, ALU_RESULT);
---	
---	--Data Memory
---	MEM_RAM : data_mem port map(ALU_RESULT, InvertedClock, REG_READ2, MemRead, MemWrite, READ_DATA); -- GClock replaced by '1'
---	
---	--Branch Offset Adder
---	BR_ADD : PC_Adder port map('0', PC_INC_OUT, PC_ADD2, PC_BRANCH_ADR);
---	
---	--Jump Decision Mux
---	JU_MUX  : EIGHT_BIT_TWO_TO_ONE port map(PC_MUX1_OUT, PC_ADD2, Jump, PC_IN);
---	
---	--Register File Data Mux
---	REG_DATA_MUX : EIGHT_BIT_TWO_TO_ONE port map(ALU_RESULT, READ_DATA, MemToReg, WRITE_DATA_IN);
---	
---	--ALU Control
---	ALU_CNTRL : ALU_CONTROL port map(ALUOp, INSTRUCTION_OUT(5 DOWNTO 0), ALU_CONTROL_OUT);
---	
---	--CLock Inverter
---	INV : ClockInverter port map(GClock, InvertedClock);
---	
---	
---	
---	--Output Mux
---	HLMUX : EIGHT_BIT_EIGHT_TO_ONE port map(PC_OUT, ALU_RESULT, REG_READ1, REG_READ2, WRITE_DATA_IN,LAST_MUX_INPUT,LAST_MUX_INPUT,LAST_MUX_INPUT, ValueSelect, MuxOut);
---	
---	
+	--Output Mux
+	HLMUX : EIGHT_BIT_EIGHT_TO_ONE port map(PC_OUT, EX_MEM_ALU_RESULT_IN, REG_READ1, REG_READ2, MEM_WB_WRITE_DATA_IN,LAST_MUX_INPUT,
+ LAST_MUX_INPUT,LAST_MUX_INPUT, ValueSelect, MuxOut);
+	
+	
 
 
 
@@ -291,22 +468,30 @@ entity MultiCycleProc is
 	CLR_MUX_IN(2 DOWNTO 1) <= ALUOp;
 	CLR_MUX_IN(0) <= ALUSrc;
 	
+	PC_Stall_Sig <= not(PC_Stall);
+	Branch_Sig <= BRANCH AND BR_EQUAL_SIG;
+	IF_ID_Rs_OUT <= IF_ID_INSTRUCTION(25 DOWNTO 21);
+	IF_ID_Rt_OUT <= IF_ID_INSTRUCTION(20 DOWNTO 16);
+	ID_EX_Clear <= IFFlush or HazardClr;
 	
 	
 	
---	LAST_MUX_INPUT(7) <= '0';
---	LAST_MUX_INPUT(6) <= RegDST;
---	LAST_MUX_INPUT(5) <= Jump;
---	LAST_MUX_INPUT(4) <= MemRead;
---	LAST_MUX_INPUT(3) <= MemToReg;
---	LAST_MUX_INPUT(2 DOWNTO 1) <= ALUOp;
---	LAST_MUX_INPUT(0) <= ALUSrc;
---	BRANCH_ZERO_SIG <= BRANCH AND ZERO_SIG;
---	InstructionOut <= INSTRUCTION_OUT;
---	BranchOut <= BRANCH;
---	ZeroOut <= ZERO_SIG;
---	MemWriteOut <= MemWrite;
---	RegWriteOut <= REG_WRITE_SIG;
+	
+	
+	LAST_MUX_INPUT(7) <= '0';
+	LAST_MUX_INPUT(6) <= RegDST;
+	LAST_MUX_INPUT(5) <= Jump;
+	LAST_MUX_INPUT(4) <= MemRead;
+	LAST_MUX_INPUT(3) <= MemToReg;
+	LAST_MUX_INPUT(2 DOWNTO 1) <= ALUOp;
+	LAST_MUX_INPUT(0) <= ALUSrc;
+	BranchOut <= BRANCH;
+	ZeroOut <= ZERO;
+	
+	InstructionOut <= INSTRUCTION_OUT;
+	MemWriteOut <= EX_MEM_MemWrite_Out;
+	RegWriteOut <= MEM_WB_RegWrite;
+
 	
 	
 

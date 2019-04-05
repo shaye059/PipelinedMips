@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Apr 03 11:05:06 2019
+Analysis & Synthesis Status : Successful - Fri Apr 05 11:17:36 2019
 Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Web Edition
 Revision Name : MultiCycleProc
-Top-level Entity Name : Forwarding_Unit
+Top-level Entity Name : MultiCycleProc
 Family : Cyclone IV E
-Total logic elements : 22
-    Total combinational functions : 22
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 26
+Total logic elements : 908
+    Total combinational functions : 611
+    Dedicated logic registers : 388
+Total registers : 388
+Total pins : 49
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 10,240
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
